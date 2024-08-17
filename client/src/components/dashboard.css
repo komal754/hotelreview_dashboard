@@ -1,0 +1,57 @@
+/* Dashboard styles */
+
+.dashboard {
+    padding: 2rem;
+  }
+  
+  .card {
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-body {
+    padding: 1.5rem;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .chart-container {
+    width: 100%;
+    height: 400px;
+    margin: 2rem auto;
+  }
+  
+  .chart {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Responsive styles */
+  
+  @media (max-width: 768px) {
+    .card {
+      margin-bottom: 10px;
+    }
+    .card-body {
+      padding: 1rem;
+    }
+    .chart-container {
+      height: 300px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      margin-bottom: 5px;
+    }
+    .card-body {
+      padding: 0.5rem;
+    }
+    .chart-container {
+      height: 200px;
+    }
+  }
