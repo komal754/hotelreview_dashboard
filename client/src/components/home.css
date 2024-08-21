@@ -1,64 +1,98 @@
-/* Add this to your CSS file */
+.home-container {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
 
-/* Global styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+.animated-title {
+  font-size: 3em;
+  color: #333;
+  margin-bottom: 20px;
+  animation: fadeInDown 1s ease-out;
+}
+
+.sub-title {
+  font-size: 1.5em;
+  color: #555;
+  margin-bottom: 30px;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+.explore-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
   }
-  
-  .container {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .row {
-    margin-bottom: 20px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  
-  .col {
-    padding: 10px;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .card {
-    margin-bottom: 20px;
-    transition: all 0.3s ease-in-out; /* Add transition effect */
-  }
-  
-  .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  .card-body {
-    padding: 20px;
-  }
-  
-  .card-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .card-text {
-    font-size: 14px;
-    color: #666;
-  }
-  
-  .card-text p {
-    margin-bottom: 10px;
-  }
-  
-  /* Add animation effect on hover */
-  .card:hover .card-title {
-    transform: translateY(-5px);
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .card:hover .card-text {
-    transform: translateY(5px);
-    transition: all 0.3s ease-in-out;
-  }
+}
+
+.features-row {
+  margin-top: 50px;
+}
+
+.chart-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.chart-title {
+  font-size: 1.8em;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.feature-col {
+  display: flex;
+  justify-content: space-between; /* Distributes space between the feature boxes */
+  align-items: stretch; /* Ensures all feature boxes have the same height */
+  margin-bottom: 30px;
+}
+
+.feature-box {
+  flex: 1; /* Ensures that each feature box takes equal space */
+  margin: 10px; /* Adds space between the boxes */
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-10px);
+}
+
+.feature-box h3 {
+  font-size: 1.5em;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.feature-box p {
+  font-size: 1.2em;
+  color: #666;
+}

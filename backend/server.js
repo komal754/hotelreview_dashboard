@@ -18,6 +18,7 @@ app.use((req, res, next) => {
   next();
 });
 app.post('/api/hotel-reviews', async (req, res) => {
+  console.log('Request body:', req.body);
   try {
     const hotelReview = new HotelReview(req.body);
     const review = await hotelReview.save();

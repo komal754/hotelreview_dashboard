@@ -1,0 +1,46 @@
+.sidebar {
+  background: linear-gradient(145deg, #333, #444); /* Gradient background for a modern look */
+  color: #fff;
+  padding: 20px;
+  width: 180px; /* Slightly wider to give more space to content */
+  /* height: calc(100vh - 50px);  */
+  /* margin-top: 5px; */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* A more prominent shadow */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 20px; /* More space between items */
+}
+
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px; /* Add padding for better click area */
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover transition */
+}
+
+.sidebar a:hover {
+  color: #fff;
+  background-color: #555; /* Darker hover background for contrast */
+  transform: translateX(5px); /* Slightly move link to the right on hover */
+}
+
+.sidebar svg {
+  margin-right: 15px;
+  font-size: 20px; /* Slightly larger icons */
+}
+
+.sidebar li:hover svg {
+  color: #ffcc00; /* Change icon color on hover for emphasis */
+}

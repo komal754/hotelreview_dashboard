@@ -1,0 +1,53 @@
+.navbar {
+  background: linear-gradient(90deg, #191818 0%, #333 100%); /* Add a gradient background */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif; /* Modern sans-serif font */
+  font-weight: bolder;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: background-color 0.3s ease;
+}
+
+.navbar-brand {
+  font-size: 26px;
+  font-weight: 700; /* Bold font for brand text */
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1.2px; /* Slightly increased letter spacing */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #ffd8d8; /* Change to a gold color on hover */
+  transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+.container-fluid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #ffcc00; /* Change to a gold color on hover */
+}
+
+.navbar * {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #fff;
+}
+
+.navbar-brand:before {
+  content: '🏨 '; /* Add a small icon before the brand name */
+  font-size: 1.2em;
+}
